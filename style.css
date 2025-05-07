@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Arka plan rengi */
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+    z-index: -3;
+  }
+  
+  /* Yıldızlar */
+  .stars {
+    .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.6) 0.8px, transparent 1px);
+        background-size: 4px 4px;
+        animation: moveStars 80s linear infinite;
+        opacity: 0.3; /* daha yumuşak görünüm */
+        z-index: -2;
+      }
+      
+  }
+  
+  @keyframes moveStars {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-500px, -1000px);
+    }
+  }
+  
+  .message-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  #message {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    white-space: pre-line;
+  }
+  
+  #start-btn {
+    margin-top: 30px;
+    padding: 12px 32px;
+    font-size: 1.2rem;
+    background: #00f0ff;
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px #00f0ff;
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00f0ff;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .rocket {
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(to top, #ff3c00, #ffd000);
+    border-radius: 25px 25px 5px 5px;
+    transform: translateX(-50%);
+    transition: bottom 5s ease-in;
+    z-index: 3;
+    box-shadow: 0 0 30px rgba(255, 60, 0, 0.8);
+  }
+  
