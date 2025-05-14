@@ -1,39 +1,22 @@
-#  Yıldızlı Yolculuk
+```markdown
+# Star Journey
 
-Bu oyun, bir keşif yolculuğunda gezegenler arası bir serüvene çıkarak, kullanıcıların zorlu görevlerle karşılaşacağı bir galaksi keşfi oyunudur.
+A space-themed adventure game where users explore galaxies and complete missions.
 
-## Özellikler
-- Galaksi haritası ve gezegenler arası yolculuk.
-- Zorluk seviyelerine göre görevler.
-- Eğlenceli ve öğretici bir oyun deneyimi.
+## Features
+- Space exploration
+- Mission system
+- Resource management
 
-##  Kullanılan Teknolojiler
-- Python
-- random (gezegenler ve görevler için)
-- time (zamanlayıcı)
+## Technologies Used
+- Python 3
+- Pygame
 
-##  Kurulum
+## Installation
 
-1. Projeyi klonlayın:
-
-    ```bash
-    git clone https://github.com/havvakrbck1/yildizli-yolculuk.git
-    cd yildizli-yolculuk
-    ```
-
-2. Gerekli Python kütüphanelerini yükleyin:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Oyunu başlatın:
-
-    ```bash
-    python yildizli_yolculuk.py
-    ```
-
-## 
-Yeni gezegenler, görevler veya yeni özellikler eklenebilir.
-
+```bash
+git clone https://github.com/havvakrbck1/star-journey.git
+cd star-journey
+pip install -r requirements.txt
+python game.py
 
