@@ -12,6 +12,11 @@ A space-themed adventure game where users explore galaxies and complete missions
 - Python 3
 - Pygame
 
+## Ekran Görüntüleri
+
+![Screenshot](./Screenshot.png)
+![Screenshot(2)](./Screenshot(2).png)
+
 ## Installation
 
 ```bash
